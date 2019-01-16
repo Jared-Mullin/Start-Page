@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <script>
+            function upTime() {
+                var myDate = new Date();
+                var hr = myDate.getHours();
+                var min = myDate.getMinutes();
+                var sec = myDate.getSeconds();
+                document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec;
+                window.setTimeout(upTime, 1000)
+            }
+        </script>
+    </head>
+    <body onload="upTime()">
+        <div id="wrap">
+            <div id="header">
+                <h1 id="clock">00:00:00</h1>
+            </div>
+            <div id="content">
+                    <span id="block">
+                        <span id="blockHead" style="background-color: crimson;">Communications</span><br>
+                        <span id="linkBody">
+                            <a href="https://discordapp.com/">Discord</a><br>
+                            <a href="https://outlook.office.com/owa/">Outlook</a><br>
+                            <a href="https://mail.protonmail.com/login">ProtonMail</a>
+                        </span>
+                    </span>
+                <span id="block">
+                    <span id="blockHead" style="background-color: darkblue;">Education</span><br>
+                    <span id="linkBody">
+                        <a href="https://nuigalway.blackboard.com/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1">Blackboard</a><br>
+                        <a href="http://www.library.nuigalway.ie/">Library</a><br>
+                        <a href="https://www.overleaf.com/">Overleaf</a><br>
+                        <a href="https://www.symbolab.com/">Symbolab</a><br>
+                        <a href="https://trello.com/b/MZtAsPPn/assignments">Trello</a>
+                        <a href="https://www.w3schools.com/">W3schools</a>
+                    </span>
+                </span>
+                <span id="block">
+                    <span id="blockHead" style="background-color: gray;">Gaming</span><br>
+                    <span id="linkBody">
+                        <a href="https://ie.webuy.com/">CeX</a><br>
+                        <a href="https://www.gosugamers.net/">GosuGamers</a><br>
+                        <a href="https://www.gog.com/">GOG<br>
+                        <a href="https://www.hltv.org/">HLTV</a><br>
+                        <a href="https://www.humblebundle.com/">HumbleBundle</a><br>
+                        <a href="https://watch.euw.lolesports.com/schedule?leagues=lec,lcs,lck,worlds,lpl,cblol-brazil,turkiye-sampiyonluk-ligi">LoL Esports</a><br>
+                        <a href="https://www.reddit.com/r/leagueoflegends">/r/LeagueofLegends</a><br>
+                        <a href="https://www.reddit.com/r/globaloffensive">/r/GlobalOffensive</a><br>
+                        <a href="https://www.reddit.com/r/gaming">/r/Gaming</a><br>
+                        <a href="https://www.twitch.tv/">Twitch</a><br>
+                        <a href="https://store.steampowered.com/">Steam</a><br>
+                        <a href="https://www.vpesports.com/">VPEsports</a>
+                    </span>
+                </span>
+                <span id="block">
+                        <span id="blockHead" style="background-color: green;">Media</span><br>
+                        <span id="linkBody">
+                            <a href="http://www.1377x.to/">1377x</a><br>
+                            <a href="https://myanimelist.net/">MyAnimeList</a><br>
+                            <a href="https://www.netflix.com/">Netflix</a><br>
+                            <a href="https://nyaa.si/">Nyaa</a><br> 
+                            <a href="https://app.plex.tv/desktop">Plex</a><br>
+                            <a href="https://thepiratebay3.org/">ThePirateBay</a><br>
+                            <a href="https://www.youtube.com/">YouTube</a>
+                        </span>
+                    </span>
+                <span id="block">
+                    <span id="blockHead" style="background-color: orange;">Technology</span><br>
+                    <span id="linkBody">
+                        <a href="http://boards.4channel.org/g/">4chan</a><br>
+                        <a href="https://www.codecademy.com/">Codecademy</a><br>
+                        <a href="https://github.com/">GitHub</a><br>
+                        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a><br>
+                        <a href="https://www.reddit.com/r/programming">/r/Programming</a><br>
+                        <a href="https://www.reddit.com/r/technology">/r/Technology</a>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
