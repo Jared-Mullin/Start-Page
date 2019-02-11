@@ -10,6 +10,15 @@
                 var hr = myDate.getHours();
                 var min = myDate.getMinutes();
                 var sec = myDate.getSeconds();
+                if (hr < 10) {
+                    hr = '0' + hr;
+                }
+                if (min < 10) {
+                    min = '0' + min;
+                }
+                if (sec < 10) {
+                    sec = '0' + sec;
+                }
                 document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec;
                 window.setTimeout(upTime, 1000)
             }
@@ -32,11 +41,11 @@
                 <span id="block">
                     <span id="blockHead" style="background-color: darkblue;">Education</span><br>
                     <span id="linkBody">
-                        <a href="https://nuigalway.blackboard.com/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1">Blackboard</a><br>
+                        <a href="https://nuigalway.blackboard.com/">Blackboard</a><br>
                         <a href="http://www.library.nuigalway.ie/">Library</a><br>
                         <a href="https://www.overleaf.com/">Overleaf</a><br>
                         <a href="https://www.symbolab.com/">Symbolab</a><br>
-                        <a href="https://trello.com/b/MZtAsPPn/assignments">Trello</a>
+                        <a href="https://trello.com/">Trello</a><br>
                         <a href="https://www.w3schools.com/">W3schools</a>
                     </span>
                 </span>
@@ -48,7 +57,7 @@
                         <a href="https://www.gog.com/">GOG<br>
                         <a href="https://www.hltv.org/">HLTV</a><br>
                         <a href="https://www.humblebundle.com/">HumbleBundle</a><br>
-                        <a href="https://watch.euw.lolesports.com/schedule?leagues=lec,lcs,lck,worlds,lpl,cblol-brazil,turkiye-sampiyonluk-ligi">LoL Esports</a><br>
+                        <a href="https://watch.euw.lolesports.com/schedule?leagues=lec,lcs,lck,worlds,lpl">LoL Esports</a><br>
                         <a href="https://www.reddit.com/r/leagueoflegends">/r/LeagueofLegends</a><br>
                         <a href="https://www.reddit.com/r/globaloffensive">/r/GlobalOffensive</a><br>
                         <a href="https://www.reddit.com/r/gaming">/r/Gaming</a><br>
